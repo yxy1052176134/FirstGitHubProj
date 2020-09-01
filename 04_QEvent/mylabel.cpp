@@ -38,13 +38,13 @@ void MyLabel::mouseMoveEvent(QMouseEvent *ev)
     this->setText(text);
 }
 
-void MyLabel::enterEvent(QEvent *e)
+void MyLabel::enterEvent(QEvent *)
 {
     QString text = QString("<center><h1>鼠标进入窗口</h1></center>");
     this->setText(text);
 }
 
-void MyLabel::leaveEvent(QEvent *e)
+void MyLabel::leaveEvent(QEvent *)
 {
     QString text = QString("<center><h1>鼠标离开窗口</h1></center>");
     this->setText(text);
